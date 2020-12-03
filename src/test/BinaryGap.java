@@ -1,4 +1,4 @@
-/*
+package test;/*
 A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.
 For example, number 9 has binary representation 1001 and contains a binary gap of length 2. The number 529 has binary representation 1000010001 and contains two binary gaps: one of length 4 and one of length 3. The number 20 has binary representation 10100 and contains one binary gap of length 1. The number 15 has binary representation 1111 and has no binary gaps. The number 32 has binary representation 100000 and has no binary gaps.
 Write a function:
@@ -25,6 +25,7 @@ public class BinaryGap {
     public static int j;
     public static int N;
     public static String binaryVal = "";
+
     public static OptionalInt solution(int Num) {
         N = Num;
         while (N > 0) {
@@ -36,9 +37,10 @@ public class BinaryGap {
         }
 
         int[] allBinaryGaps = new int[0];
-        int n=0;
+        int n = 0;
         count = 0;
-        len = binaryVal.length(); ;
+        len = binaryVal.length();
+        ;
         for (i = 0; i < len; i++) {
 
             if (binaryVal.charAt(i) == 1) {
@@ -49,9 +51,9 @@ public class BinaryGap {
                     count++;
                     j++;
                 }
-                allBinaryGaps[n++]=count;
-                count=0;
-                System.out.println("Number " + Num + " has BinaryValue=" + binaryVal + " and has BinaryGap=" + count);
+                allBinaryGaps[n++] = count;
+                count = 0;
+                System.out.println("Number " + Num + " has BinaryValue=" + binaryVal + " and has test.BinaryGap=" + count);
 
             }
         }
@@ -70,6 +72,7 @@ public class BinaryGap {
         return maxcount;
 
     }
+
 
     public static void main(String args[]) {
     /*
@@ -94,36 +97,30 @@ public class BinaryGap {
         for (i=0;i<Nbools.size();i++) {
             int binaryGap;
             for (String s :  Nbools.values() ) {
-                 //Logic for calculating BinaryGap follows-
+                 //Logic for calculating test.BinaryGap follows-
                 s.
             }
         } */
 
-        //BinaryGap bg = new BinaryGap();
-
-
+        //test.BinaryGap bg = new test.BinaryGap();
 
 
         File inputFile = new File("test-input.txt");
-        try
-        {
+        try {
             BufferedReader reader = new BufferedReader(new FileReader(inputFile));
             int x = Integer.parseInt(reader.readLine());
             answer = solution(x);
-            System.out.println(x +" "+answer);
+            System.out.println(x + " " + answer);
 
-        }   catch(IOException e) { }
+        } catch (IOException e) {
+        }
 
         BinaryGap.solution(20);
 
 
-
-
-
-
-        }
-
-
-
     }
+
+}
+
+
 
