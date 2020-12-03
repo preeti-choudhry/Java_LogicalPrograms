@@ -1,4 +1,4 @@
-package test;
+package main.java;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -60,7 +60,7 @@ public class BinaryGap_GoogledSolution {static String N_binary;
 
         }   catch(IOException e) { }
 
-        //test.BinaryGap.Solution(20);
+        //main.java.BinaryGap.Solution(20);
 
     }
 

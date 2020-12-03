@@ -1,4 +1,4 @@
-package test;/*
+package main.java;/*
 A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.
 For example, number 9 has binary representation 1001 and contains a binary gap of length 2. The number 529 has binary representation 1000010001 and contains two binary gaps: one of length 4 and one of length 3. The number 20 has binary representation 10100 and contains one binary gap of length 1. The number 15 has binary representation 1111 and has no binary gaps. The number 32 has binary representation 100000 and has no binary gaps.
 Write a function:
@@ -53,7 +53,7 @@ public class BinaryGap {
                 }
                 allBinaryGaps[n++] = count;
                 count = 0;
-                System.out.println("Number " + Num + " has BinaryValue=" + binaryVal + " and has test.BinaryGap=" + count);
+                System.out.println("Number " + Num + " has BinaryValue=" + binaryVal + " and has main.java.BinaryGap=" + count);
 
             }
         }
@@ -97,12 +97,12 @@ public class BinaryGap {
         for (i=0;i<Nbools.size();i++) {
             int binaryGap;
             for (String s :  Nbools.values() ) {
-                 //Logic for calculating test.BinaryGap follows-
+                 //Logic for calculating main.java.BinaryGap follows-
                 s.
             }
         } */
 
-        //test.BinaryGap bg = new test.BinaryGap();
+        //main.java.BinaryGap bg = new main.java.BinaryGap();
 
 
         File inputFile = new File("resources/test-input.txt");
