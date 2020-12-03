@@ -50,7 +50,7 @@ public class BinaryGap_GoogledSolution {static String N_binary;
 
     public static void main(String args[]) {
 
-        File inputFile = new File("test-input.txt");
+        File inputFile = new File("resources/test-input.txt");
         try
         {
             BufferedReader reader = new BufferedReader(new FileReader(inputFile));

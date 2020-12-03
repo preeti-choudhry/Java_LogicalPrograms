@@ -105,7 +105,7 @@ public class BinaryGap {
         //test.BinaryGap bg = new test.BinaryGap();
 
 
-        File inputFile = new File("test-input.txt");
+        File inputFile = new File("resources/test-input.txt");
         try {
             BufferedReader reader = new BufferedReader(new FileReader(inputFile));
             int x = Integer.parseInt(reader.readLine());
