@@ -28,7 +28,8 @@ public class CodilityCandyProblem {
             }
         }
 
-        System.out.println(candies.toString());
+       //System.out.println(candies.toString());
+        System.out.println(candies);
         return candies.size();
     }
 
