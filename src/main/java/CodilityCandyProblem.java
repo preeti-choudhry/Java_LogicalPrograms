@@ -35,8 +35,17 @@ public class CodilityCandyProblem {
     public static void main(String args[])
     {
         CodilityCandyProblem s = new CodilityCandyProblem();
-        int[] X = {3,4,7,7,6,6};
-        System.out.println(s.solution(X));
+        int[] X = {3,4,7,7,7,6,6,4,3,6};
+        System.out.println("Total candies="+X.length);//+ X.toString());
+        System.out.print("[");
+        for(int i=0;i<X.length;i++) {
+            System.out.print(X[i]);
+            if(i<=(X.length)-2)
+                System.out.print(",");
+        }
+        System.out.println("]");
+        System.out.println("Mary can have "+(X.length/2)+ " candies.");
+        System.out.println("And Mary can have "+s.solution(X)+ " different types from available candies.");
 
     }
 }
