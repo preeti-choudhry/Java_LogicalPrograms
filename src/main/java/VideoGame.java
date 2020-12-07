@@ -27,7 +27,7 @@ public class VideoGame {
         this.platforms = platforms;
     }
     
-    
+    /*
     public  String getTitle() {
         return title;
     }
@@ -59,6 +59,7 @@ public class VideoGame {
     public  void setPlatforms(String[] platforms) {
         this.platforms = platforms;
     }
+
     @Override
     public String toString()
     {
@@ -66,6 +67,20 @@ public class VideoGame {
         result += "\nTitle: "+ getTitle() + "\nYear: "+getYear()+
                 "\nRating: "+getRating()+"\nPlatforms: ";
         for (String platform : getPlatforms()) {
+            result += platform + "  ";
+        }
+        return result;
+    }
+    */
+
+    @Override
+    public String toString()
+    {
+        String result = "";
+        result += "\nTitle: "+ this.title + "\nYear: "+this.year+
+                "\nRating: "+this.rating+"\nPlatforms: ";
+
+        for (String platform : this.platforms) {
             result += platform + "  ";
         }
         return result;

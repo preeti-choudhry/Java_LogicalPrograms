@@ -106,10 +106,18 @@ public class LinkedListExample_extended {
         System.out.println("Output of states.peekFirst() returns Object: "+states.peekFirst()); //returns an Object - i.e the FIRST element.
         System.out.println("Output of states.peekLast() returns Object: "+states.peekLast()); //returns an Object - i.e the LAST element.
 
+        //Print all states in the List.
+        System.out.println();
+        System.out.println("Output after peek:");
+        System.out.println(states);
+
+
         //NOTE: poll() - RETURNS and REMOVES the element that was PRESENT at the beginning of List creation.
         System.out.println("Output of states.poll() returns Object: "+states.poll());
         System.out.println("Output of states.pollFirst() returns Object: "+states.pollFirst());
         System.out.println("Output of states.pollLast() returns Object: "+states.pollLast()); //polls the LAST element added to the List.
+
+
 
         //NOTE: pop() - RETURNS and REMOVES USING FIFO i.e the element that was "ADDED at the beginning" of List creation will be REMOVED FIRST.
         System.out.println("Output of states.pop() returns Object: "+states.pop()); //returns the element added at the very beginning of List creation.
@@ -121,9 +129,24 @@ public class LinkedListExample_extended {
         System.out.println(states);
 
 
+        /*
+        SUMMARY-
+        peek(),peekFirst(),element() works same- i.e RETURNS the First element from Collection but DOESN'T REMOVE.
+        poll(),pollFirst(), remove(),pop() works same- i.e REMOVES & RETURNS the First element from Collection.
+
+        Also,
+        peek() is used with STACKS(LIFO) & QUEUES(FIFO).
+        push() and pop() is used for STACKS.
+        remove() and poll() is used for QUEUES.
+        [Difference between remove(), poll():
+         remove() removes the top element in FIFO and returns an ERROR if Queue is empty.
+         However poll() is  a new method that also removes the top element but it returns NULL if the Queue is empty.]
+
+         */
+
     }
-  
-  
+
+
 }
 
 
