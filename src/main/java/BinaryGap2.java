@@ -95,7 +95,7 @@ public class BinaryGap2 {
         } catch (IOException e) {
         }
 
-        BinaryGap.solution(20);
+        BinaryGap2.solution(20);
 
 
 
